@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Teams">
+
+    <TextView
+        android:id="@+id/tv_team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team1 :"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp">
+    </TextView>
+    <EditText
+        android:id="@+id/et_team1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/tv_team1"
+        android:hint="Please Enter Team Name"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:maxLength="30"
+        android:background="@drawable/rounded_edittext">
+    </EditText>
+    <Button
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vs"
+        android:id="@+id/tv_vs"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_team1"></Button>
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/tv_team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team2 :"
+        android:textSize="25dp"
+        android:layout_below="@+id/tv_team1">
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_team2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_team1"
+        android:layout_marginTop="90dp"
+        android:layout_toRightOf="@+id/tv_team2"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Please Enter Team Name"
+        android:padding="10dp"
+        android:maxLength="30"
+        android:textAlignment="center"></EditText>
+
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/bt_next"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/et_team2"
+        android:gravity="center"
+
+        ></Button>
+
+
+</RelativeLayout>
